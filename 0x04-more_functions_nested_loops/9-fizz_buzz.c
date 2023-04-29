@@ -6,33 +6,30 @@
  * and for the multiples of five prints Buzz
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-		int i;
-
-		for (i = 1; i <= 100; i++)
-		{
-
-		} else if (i % 5 == 0 )
-		{
-			printf(" Buzz");
-		} else if (i % 3 == 0 )
-		{
-			printf(" Fizz");
-
-		} 
-		else (z % 3 == 0 && z % 5 == 0)
+int i;
+for (i = 1; i <= 100; i++)
+{
+if (i % 3 == 0 && i % 5 == 0)
 {
 printf("FizzBuzz");
 }
-		
-if (z != 100)
-	{
-
+else if (i % 5 == 0)
+{
+printf("Buzz");
+}
+else if (i % 3 == 0)
+{
+printf("Fizz");
+}
+else
+{
+printf("%d", i);
+}
+if (i != 100)
 printf(" ");
 }
-	printf("\n");
-
-	return (0);
+printf("\n");
+return (0);
 }
