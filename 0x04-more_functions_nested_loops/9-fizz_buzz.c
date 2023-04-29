@@ -6,10 +6,11 @@
  * and for the multiples of five prints Buzz
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i;
-	
+
 	for (i = 1; i <= 100; i++)
 	{
 		printf(" Fizz");
@@ -28,10 +29,10 @@ int main(void)
 	}
 	else
 	{
-																							printf(" %d", i);
-																						}
-		}
+		printf(" %d", i);
+	}
+	}
 		printf("\n");
 
-		return (0);
+	return (0);
 }
