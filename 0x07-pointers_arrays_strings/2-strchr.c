@@ -1,12 +1,21 @@
 #include "main.h"
 
 /**
- * set_string - sets the value of a pointer to a char
- * @s: pointer to a pointer
- * @to: pointer character
+ * _strchr - locates a character in a string
+ * @c: character
+ * @s: string
+ * Return:  pointer to the first occurrence of c in s
  */
 
-void set_string(char **s, char *to)
+char *_strchr(char *s, char c)
 {
-*s = to;
+int x = 0;
+
+while (s[x] >= '\0')
+{
+if (s[x] == c)
+return (&s[x]);
+x++;
+}
+return (0);
 }
